@@ -1,0 +1,179 @@
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.form-input, .form-textarea {
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.submit-button:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.form-state-display {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f7fafc;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+}
+
+.form-state-display h4 {
+  color: #4a5568;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.form-state-display pre {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.success-message {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-message h2 {
+  color: #48bb78;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.success-message p {
+  color: #4a5568;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.submitted-data {
+  background: #f0fff4;
+  border: 2px solid #9ae6b4;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.submitted-data h4 {
+  color: #2f855a;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.submitted-data p {
+  color: #2d3748;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.submitted-data p:last-child {
+  margin-bottom: 0;
+}
+
+.submitted-data strong {
+  color: #2f855a;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+  
+  .submit-button {
+    width: 100%;
+  }
+  
+  .success-message h2 {
+    font-size: 2rem;
+  }
+}
